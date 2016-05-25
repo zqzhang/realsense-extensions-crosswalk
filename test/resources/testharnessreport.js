@@ -412,7 +412,7 @@ function dump_test_results(tests, status) {
         }
     };
     request.open("POST", "test.py");
-    request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+    request.setRequestHeader("Content-Type", "application/json");
     request.send(JSON.stringify(data));
 }
 
